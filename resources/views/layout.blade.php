@@ -9,9 +9,11 @@
 </head>
 <body>
   
-<div class="container">
-    @yield('content')
-</div>
+  <div>
+    <h1>
+        Hello 
+    </h1>
+  </div>
    
 </body>
 </html>
