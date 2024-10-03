@@ -90,7 +90,10 @@ div.content {
                     <a class="active" href="#home">Home</a>
                     <a href="#news">Student</a>
                     <a href="#contact">Teacher</a>
+                    <a href="#contact">Courses</a>
                     <a href="#about">Enrollment</a>
+                    <a href="#about">payment</a>
+
                 </div>
 
             </div>
@@ -99,7 +102,6 @@ div.content {
                 @yield('content')
                 </div>
             </div>
-
         </div>
 
     </div>
