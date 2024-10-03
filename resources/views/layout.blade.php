@@ -13,17 +13,36 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><h2>Student Management  Project</h2></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    </nav>
-                    </div>
-                </div>
-            
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <h2>Student Management Project</h2>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                </nav>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- The sidebar -->
+                <div class="sidebar">
+                    <a class="active" href="#home">Home</a>
+                    <a href="#news">News</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <!-- Page content -->
+                <div class="content">
+                    ..
+                </div>
+
+            </div>
+        </div>
+
+    </div>
     </div>
 
 </body>
