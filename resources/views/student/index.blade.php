@@ -1,4 +1,4 @@
-@extends('students.layout')
+@extends('layout')
 @section('content')
     <div class="container">
         <div class="row">
@@ -58,7 +58,6 @@
                                 </tbody>
                             </table>
                         </div>
- 
                     </div>
                 </div>
             </div>
