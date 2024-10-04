@@ -44,7 +44,7 @@ class TeacherController extends Controller
     public function show($id)
     {
         $teachers = Teacher::find($id);
-        return view('teachers.show')->with('teachers', $Teachers);
+        return view('teachers.show')->with('teachers', $teachers);
     }
 
     /**
