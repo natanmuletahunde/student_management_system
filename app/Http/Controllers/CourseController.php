@@ -29,7 +29,9 @@ class CourseController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Course::create($input);
+        return redirect('courses')->with('flash_message', 'Course Added!'); 
     }
 
     /**
