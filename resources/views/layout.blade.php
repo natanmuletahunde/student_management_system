@@ -93,9 +93,7 @@ div.content {
                     <a href="#contact">Courses</a>
                     <a href="#about">Enrollment</a>
                     <a href="#about">payment</a>
-
                 </div>
-
             </div>
             <div class="col-md-9">
                
