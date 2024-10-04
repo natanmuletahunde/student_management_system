@@ -48,7 +48,8 @@ class CourseController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $courses = Course::find($id);
+        return view('courses.edit')->with('courses', $courses);
     }
 
     /**
