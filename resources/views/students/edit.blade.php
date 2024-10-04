@@ -2,11 +2,11 @@
 @section('content')
  
 <div class="card">
-  <div class="card-header">Contactus Page</div>
+  <div class="card-header">Edit  Page</div>
   <div class="card-body">
       
       <form action="{{ url('student/' .$students->id) }}" method="post">
-        {!! csrf_field() !!}
+        {!! csrf_field() !!}// 
         @method("PATCH")
         <input type="hidden" name="id" id="id" value="{{$students->id}}" id="id" />
         <label>Name</label></br>
