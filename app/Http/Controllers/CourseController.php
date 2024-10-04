@@ -57,7 +57,10 @@ class CourseController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $courses = Course::find($id);
+        $input = $request->all();
+        $courses->update($input);
+        return redirect('courses')->with('flash_message', 'Course Updated!');  
     }
 
     /**
@@ -65,6 +68,7 @@ class CourseController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Course::destroy($id);
+        return redirect('courses')->with('flash_message', 'Course deleted!');  
     }
 }
