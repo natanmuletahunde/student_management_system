@@ -50,9 +50,10 @@ class StudentController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+    $students = Student::find($id);
+    return view('students.edit')->with('students', $students);
     }
 
     /**
