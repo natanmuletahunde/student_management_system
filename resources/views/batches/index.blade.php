@@ -2,10 +2,10 @@
 @section('content') 
                 <div class="card">
                     <div class="card-header">
-                        <h2>Courses Application</h2>
+                        <h2>Batches</h2>
                     </div>
                     <div class="card-body">
-                        <a href="{{ url('/courses/create') }}" class="btn btn-success btn-sm" title="Add New Course">
+                        <a href="{{ url('/batches/create') }}" class="btn btn-success btn-sm" title="Add New Batch">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add New
                         </a>
                         <br/>
@@ -16,35 +16,35 @@
                                     <tr>
                                         <th>#</th>
                                         <th>Name</th>
-                                        <th>syllabus</th>
-                                        <th>duration</th>
+                                        <th>Course</th>
+                                        <th>start_date</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                @foreach($courses as $item)
+                                @foreach($batches as $item)
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
-                                        <td>{{ $item->syllabus }}</td>
-                                        <td>{{ $item->duration }}</td>
+                                        <td>{{ $item->course_id }}</td>
+                                        <td>{{ $item->start_date }}</td>
  
                                         <td>
-                                            <a href="{{ url('/courses/' . $item->id) }}" title="View Course">
+                                            <a href="{{ url('/batches/' . $item->id) }}" title="View batch">
                                                 <button class="btn btn-info btn-sm">
                                                     <i class="fa fa-eye" aria-hidden="true"></i> View
                                                 </button>
                                             </a>
-                                            <a href="{{ url('/courses/' . $item->id . '/edit') }}" title="Edit Course">
+                                            <a href="{{ url('/batches/' . $item->id . '/edit') }}" title="Edit batch">
                                                 <button class="btn btn-primary btn-sm">
                                                     <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit
                                                 </button>
                                             </a>
  
-                                            <form method="POST" action="{{ url('/courses/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
+                                            <form method="POST" action="{{ url('/batches/' . $item->id) }}" accept-charset="UTF-8" style="display:inline">
                                                 {{ method_field('DELETE') }}
                                                 {{ csrf_field() }}
-                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Course" onclick="return confirm('Confirm delete?')">
+                                                <button type="submit" class="btn btn-danger btn-sm" title="Delete batch" onclick="return confirm('Confirm delete?')">
                                                     <i class="fa fa-trash-o" aria-hidden="true"></i> Delete
                                                 </button>
                                             </form>
