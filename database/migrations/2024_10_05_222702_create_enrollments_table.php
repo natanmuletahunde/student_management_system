@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
+            $table->string('enroll_no');
+            $table->unsignedBigInteger('');
             $table->timestamps();
         });
     }
