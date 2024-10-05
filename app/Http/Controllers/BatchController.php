@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use Illuminate\Bus\Batch;
+use Illuminate\Http\RedirectResponse;
+use App\Models\Batch;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 
 class BatchController extends Controller

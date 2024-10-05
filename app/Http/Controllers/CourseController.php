@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Http\RedirectResponse;
 use App\Models\Course;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
