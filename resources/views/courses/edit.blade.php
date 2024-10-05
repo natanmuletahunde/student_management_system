@@ -5,7 +5,7 @@
   <div class="card-header">Edit  Page</div>
   <div class="card-body">
       
-      <form action="{{ url('course/' .$courses->id) }}" method="post">
+      <form action="{{ url('courses/' .$courses->id) }}" method="post">
         {!! csrf_field() !!}
         @method("PATCH")
         <input type="hidden" name="id" id="id" value="{{$courses->id}}" id="id" />
