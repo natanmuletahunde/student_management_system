@@ -1,10 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Http\RedirectResponse;
 use App\Models\Batch;
-use Illuminate\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class BatchController extends Controller
 {
@@ -22,7 +22,7 @@ class BatchController extends Controller
      */
     public function create()
     {
-        //
+        return view(view: 'batches.create'); 
     }
 
     /**
