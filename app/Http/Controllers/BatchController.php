@@ -61,7 +61,7 @@ class BatchController extends Controller
         $batches =Batch::find($id);
         $input = $request->all();
         $batches->update($input);
-        return redirect('batches')->with('flash_message', 'Batche Updated!');  
+        return redirect('batches')->with('flash_message', 'Batch Updated!');  
     }
 
     /**
@@ -69,6 +69,7 @@ class BatchController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        Batch::destroy($id);
+        return redirect('batches')->with('flash_message', 'Batch  deleted!');  
     }
 }
