@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Bus\Batch;
 use Illuminate\Http\Request;
 
 class BatchController extends Controller
@@ -11,7 +12,8 @@ class BatchController extends Controller
      */
     public function index()
     {
-        //
+        $batches = Batch::all();
+        return view ('batches.index')->with('batches', $batches);
     }
 
     /**
