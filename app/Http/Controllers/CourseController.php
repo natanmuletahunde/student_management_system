@@ -5,6 +5,8 @@ use Illuminate\Http\RedirectResponse;
 use App\Models\Course;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
 
 class CourseController extends Controller
 {
