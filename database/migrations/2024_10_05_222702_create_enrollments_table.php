@@ -20,7 +20,6 @@ return new class extends Migration
             $table->double('fee');
             $table->foreign('batch_id')->references('id')->on('batches')->onDelete('cascade');
             $table->foreign('student_id')->references('id')->on('students')->onDelete('cascade');
-
             $table->timestamps();
         });
     }
