@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
-use App\Models\Course;
+use App\Models\Enrollment;
 use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -15,7 +15,9 @@ class EnrollmentController extends Controller
      */
     public function index()
     {
-        //
+        $enrollments = Enrollment::all();
+        return view ('enrollments.index')->with('enrollments', $enrollments);
+    }
     }
 
     /**
@@ -23,7 +25,7 @@ class EnrollmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('enrollments.create'); 
     }
 
     /**
@@ -31,7 +33,9 @@ class EnrollmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $input = $request->all();
+        Enrollment::create($input);
+        return redirect('enrollments')->with('flash_message', 'Enrollment Added!'); 
     }
 
     /**
